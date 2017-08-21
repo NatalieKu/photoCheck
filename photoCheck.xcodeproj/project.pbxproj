@@ -12,6 +12,9 @@
 		E05D91511F474114008394DC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E05D914F1F474114008394DC /* Main.storyboard */; };
 		E05D91531F474114008394DC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E05D91521F474114008394DC /* Assets.xcassets */; };
 		E05D91561F474114008394DC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E05D91541F474114008394DC /* LaunchScreen.storyboard */; };
+		E0B47AC61F48A563000896AC /* Facebook.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0B47AC51F48A563000896AC /* Facebook.swift */; };
+		E0FA06EC1F48AAA100D9E0CD /* FacebookTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0FA06EB1F48AAA100D9E0CD /* FacebookTableViewController.swift */; };
+		E0FA06EE1F48AAB600D9E0CD /* FacebookTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0FA06ED1F48AAB600D9E0CD /* FacebookTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		E05D91521F474114008394DC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E05D91551F474114008394DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E05D91571F474114008394DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E0B47AC51F48A563000896AC /* Facebook.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Facebook.swift; sourceTree = "<group>"; };
+		E0FA06EB1F48AAA100D9E0CD /* FacebookTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacebookTableViewController.swift; sourceTree = "<group>"; };
+		E0FA06ED1F48AAB600D9E0CD /* FacebookTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacebookTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,8 +61,11 @@
 			isa = PBXGroup;
 			children = (
 				E05D914B1F474114008394DC /* AppDelegate.swift */,
+				E0B47AC51F48A563000896AC /* Facebook.swift */,
 				E05D914D1F474114008394DC /* ViewController.swift */,
 				E05D914F1F474114008394DC /* Main.storyboard */,
+				E0FA06EB1F48AAA100D9E0CD /* FacebookTableViewController.swift */,
+				E0FA06ED1F48AAB600D9E0CD /* FacebookTableViewCell.swift */,
 				E05D91521F474114008394DC /* Assets.xcassets */,
 				E05D91541F474114008394DC /* LaunchScreen.storyboard */,
 				E05D91571F474114008394DC /* Info.plist */,
@@ -96,6 +105,7 @@
 				TargetAttributes = {
 					E05D91471F474114008394DC = {
 						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
@@ -135,8 +145,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E0FA06EC1F48AAA100D9E0CD /* FacebookTableViewController.swift in Sources */,
 				E05D914E1F474114008394DC /* ViewController.swift in Sources */,
 				E05D914C1F474114008394DC /* AppDelegate.swift in Sources */,
+				E0B47AC61F48A563000896AC /* Facebook.swift in Sources */,
+				E0FA06EE1F48AAB600D9E0CD /* FacebookTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,11 +286,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HC9UU37FN8;
 				INFOPLIST_FILE = photoCheck/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "-1.photoCheck";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -287,11 +304,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HC9UU37FN8;
 				INFOPLIST_FILE = photoCheck/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "-1.photoCheck";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
