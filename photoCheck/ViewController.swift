@@ -47,8 +47,8 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
             character5.text = "怯弱 1%"
             character6.text = "善良 90%"
             descriptionLabel.text = """
-            您是位溫和又堅忍的人物，
-            常付出自己只讓別人快樂！
+            你是擁有純真和善良和氣，
+            超群智慧讓你永不退卻！
             """
             
         }
